@@ -227,3 +227,32 @@ b {
 
 }
 
+/* animation rolling */
+@Keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+img, b, h1, h2, h3, h4, a, i, p, .w3-padding-64_Logo, .contact_purple {
+  view-timeline-name: --image;
+  view_timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+ }
+
+
+/*End animation rollinf*/
+
+
+
+
